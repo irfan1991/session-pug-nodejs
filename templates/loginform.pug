@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Sistem Otentifikasi User
+    body
+        h2 Form Login
+        if msg
+            p(style="color:#ff0;") #{msg}
+        form(action="/login", method="post")
+            div
+                label(for="user_id") User ID 
+            div
+                input(type="text", name="user_id")
+            div
+                label(for="user_password")
+            div
+                input(type="password", name="user_password")
+            div(style="margin-top:10px")
+                input(type="submit", value="Login")
